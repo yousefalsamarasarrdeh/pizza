@@ -10,7 +10,7 @@
 # General
 --------------------------------------------------------------*/
 body {
-  font-family: "Open Sans", sans-serif;
+  font-family: Poppins;
   color: #444;
 }
 
@@ -31,7 +31,7 @@ h4,
 h5,
 h6,
 .font-primary {
-  font-family: "Raleway", sans-serif;
+  font-family: Poppins;
 }
 
 /*--------------------------------------------------------------
@@ -123,8 +123,8 @@ h6,
 # Header
 --------------------------------------------------------------*/
 #header {
-  height: 70px;
-  background: #fff;
+  height: 75px;
+  background: #FFFFFF;
   z-index: 997;
   box-shadow: 0px 5px 15px 0px rgba(0, 0, 0, 0.06);
 }
@@ -148,7 +148,7 @@ h6,
 #header .logo img {
   padding: 0;
   margin: 0;
-  max-height: 40px;
+/*  max-height: 40px; */
 }
 
 .scrolled-offset {
@@ -159,7 +159,7 @@ h6,
 # Navigation Menu
 --------------------------------------------------------------*/
 /**
-* Desktop Navigation 
+* Desktop Navigation
 */
 .navbar {
   padding: 0;
@@ -182,12 +182,17 @@ h6,
   display: flex;
   align-items: center;
   justify-content: space-between;
-  padding: 10px 0 10px 30px;
-  font-family: "Open Sans", sans-serif;
-  font-size: 15px;
-  color: #5c768d;
+  padding: 8px;
+
+  color: #0F1D42;
   white-space: nowrap;
   transition: 0.3s;
+    font-family: Poppins;
+    font-size: 20px;
+    font-weight: 400;
+    line-height: 30px;
+    text-align: left;
+
 }
 
 .navbar a i,
@@ -201,7 +206,7 @@ h6,
 .navbar .active,
 .navbar .active:focus,
 .navbar li:hover>a {
-  color: #428bca;
+  color: #B2242A;
 }
 
 .navbar .dropdown ul {
@@ -267,7 +272,7 @@ h6,
 }
 
 /**
-* Mobile Navigation 
+* Mobile Navigation
 */
 .mobile-nav-toggle {
   color: #1f3548;
@@ -1341,17 +1346,16 @@ section {
 }
 
 #footer {
-  background: #587187;
-  padding: 0 0 30px 0;
+  background: #848482;
+  padding: 0 0 0px 0;
   color: #fff;
   font-size: 14px;
 }
 
 #footer .footer-top {
-  background: #5c768d;
-  border-top: 1px solid #768fa6;
-  border-bottom: 1px solid #67839c;
-  padding: 60px 0 30px 0;
+  background: #848482;
+
+  padding: 80px 0 0px 0;
 }
 
 #footer .footer-top .footer-info {
@@ -1488,4 +1492,162 @@ section {
 
 #footer .credits a {
   color: #9eccf4;
+}
+
+
+
+/* my code */
+.myfont-1 {
+    font-family: Poppins;
+    font-size: 20px;
+    font-weight: 400;
+    line-height: 30px;
+
+
+
+}
+.myfont-2 {
+    font-family: Poppins;
+    color: #0F1D42;
+
+    font-size: 24px;
+    font-weight: 400;
+    line-height: 36px;
+
+
+}
+.myfont-3 {
+    font-family: Poppins;
+    color: #0F1D42 !important;
+    font-size: 20px;
+    font-weight: 400;
+    line-height: 30px;
+
+}
+
+.myfont-4{
+    font-family: Poppins;
+    font-size: 32px;
+    font-weight: 500;
+    line-height: 48px;
+
+    color: #0F1D42!important;
+
+}
+.myfont-5{
+    font-family: Poppins;
+    font-size: 24px;
+    font-weight: 500;
+    line-height: 36px;
+
+    color: #0F1D42!important;
+
+}
+.myfont-6{
+
+    font-size: 24px;
+    font-weight: 500;
+    line-height: 36px;
+
+
+}
+.myfont-7{
+
+    font-size: 24px;
+    font-weight: 400;
+
+
+
+}
+.myfont-8{
+
+    font-size: 24px;
+    font-weight: 600;
+
+
+
+}
+.nav-img-padding{
+    padding: 0px 0px 0px 20px;
+}
+
+.footer-padding{
+    padding-top: 90px;
+}
+.padding-nav-ar {
+    padding-inline: 15px!important;
+}
+
+.me-aute2 {
+    margin-left: auto;
+}
+
+.careers-row-padding {
+    padding-block:20px;
+}
+
+.careers-form {
+    /* width: 1192px; */
+    background: #FFF;
+    /* height: 462px; */
+    top: 279px;
+    left: 44px;
+    gap: 0px;
+    border-radius: 20px ;
+    opacity: 0px;
+    padding: 30px;
+    box-shadow: 0px 2px 2px 0px #00000040;
+}
+.careers-submit {
+    width: 815px;
+    height: 60px;
+    border-color: #b2242a;
+
+    gap: 8px;
+    border-radius: 20px ;
+    opacity: 0px;
+    background: #B2242A;
+    color:white;
+}
+
+
+.myrow {
+
+    padding: 18px 66px 18px 52px;
+    gap: 8px;
+    border-radius: 20px ;
+    opacity: 0px;
+    background: #FFFFFF;
+    box-shadow: 0px 2px 2px 0px #00000040;
+
+
+
+}
+
+.form-control {
+    border-bottom: 1px solid #3C4355 !important;
+    display: block;
+    width: 100%;
+    padding: .375rem .75rem;
+    /* font-size: 1rem; */
+    /* font-weight: 400; */
+    /* line-height: 1.5; */
+    /* color: var(--bs-body-color); */
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+    background-color: var(--bs-body-bg);
+    background-clip: padding-box;
+    border: var(--bs-border-width) solid var(--bs-border-color);
+    border-radius: var(--bs-border-radius);
+    transition: border-color .15s ease-in-out, box-shadow .15s ease-in-out;
+}
+
+.padding-b-15{
+    padding-block: 15px;
+}
+@media (max-width: 549px) {
+.me-aute1 {
+    margin-right: auto !important;
+}
 }

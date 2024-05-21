@@ -7,7 +7,7 @@
 
     {{app()->getLocale()}}
     <p>@lang('navbar.Login')</p>
-    <a href="{{ url('lang/en') }}">English</a> | <a href="{{ url('lang/ar') }}">عربي</a>
+    <a href="{{ url('set/lang/en') }}">English</a> | <a href="{{ url('set/lang/ar') }}">عربي</a>
 
 
 @endsection

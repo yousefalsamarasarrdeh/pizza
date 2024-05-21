@@ -14,5 +14,9 @@ return [
     'Careers'=>'Careers',
     'Franchise'=>'Franchise',
     'Brands'=>'Brands',
+    'FAQ'=>'FAQ',
+    'Privacy'=>'Privacy',
+    'Since-2013'=>'Since 2013, we have been cooking fresh, high-quality wood-fired pizzas',
+    'copyright'=>'copyright @ 2023 Lets Pizza',
 
 ];

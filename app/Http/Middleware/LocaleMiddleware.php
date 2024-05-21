@@ -17,11 +17,11 @@ class LocaleMiddleware
      * @param  \Closure  $next
      * @return mixed
      */
-    public function handle(Request $request, Closure $next)
+    public function handle(Request $request, Closure $next): Response
     {
-        $locale = Session::get('locale', config('app.locale'));
-        App::setLocale($locale);
-
-        return $next($request);
+       if(isset($_COOKIE['lang'])){
+           app()->setLocale($_COOKIE['lang']);
+       }
+       return $next($request);
     }
 }
