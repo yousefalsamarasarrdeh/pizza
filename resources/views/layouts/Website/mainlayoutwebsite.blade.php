@@ -10,8 +10,8 @@
     <meta content="" name="keywords">
 
     <!-- Favicons -->
-    <link href="{{asset('Website/assets/img/favicon.png')}}" rel="icon">
-    <link href="{{asset('Website/assets/img/apple-touch-icon.png')}}" rel="apple-touch-icon">
+    <link href="{{asset('Website/assets/img/logo.png')}}" rel="icon">
+    <link href="{{asset('Website/assets/img/logo.png')}}" rel="apple-touch-icon">
 
     <!-- Google Fonts -->
     <link href="https://fonts.googleapis.com/css?family=Poppins" rel="stylesheet">
@@ -54,13 +54,13 @@
             <a href="{{ url('set/lang/ar') }}">AR</a> | <a href="{{ url('set/lang/en') }}" style="margin-inline-end: 36px;">EN</a>
 
             <ul>
-                <li class=""><a class="nav-link scrollto active @if(  app()->getLocale()=="ar" )  padding-nav-ar @endif " href="{{ route('Home') }}" >{{(__('navbar.Home'))}}</a></li>
+                <li class=""><a class="nav-link scrollto @if(  app()->getLocale()=="ar" )  padding-nav-ar @endif " href="{{ route('Home') }}" >{{(__('navbar.Home'))}}</a></li>
                 <li class=""><a class="nav-link scrollto @if(  app()->getLocale()=="ar" )  padding-nav-ar @endif" href="#portfolio" >{{(__('navbar.Menu'))}}</a></li>
                 <li class=""><a class="nav-link scrollto @if(  app()->getLocale()=="ar" )  padding-nav-ar @endif" href="#about">{{(__('navbar.About'))}}</a></li>
                 <li class=""><a class="nav-link scrollto @if(  app()->getLocale()=="ar" )  padding-nav-ar @endif" href="#about" >{{(__('navbar.store-Location'))}}</a></li>
                 <li class=""><a class="nav-link scrollto @if(  app()->getLocale()=="ar" )  padding-nav-ar @endif" href="{{ route('careers.create') }}" >{{(__('navbar.Careers'))}}</a></li>
 
-                <li class=""><a class="nav-link scrollto @if(  app()->getLocale()=="ar" )  padding-nav-ar @endif" href="#services" >{{(__('navbar.Franchise'))}}</a></li>
+                <li class=""><a class="nav-link scrollto @if(  app()->getLocale()=="ar" )  padding-nav-ar @endif" href="{{route('Franchise')}}" >{{(__('navbar.Franchise'))}}</a></li>
 
 
                 <li class="dropdown" class="myfont-1"><a href="#"><span class="@if(  app()->getLocale()=="ar" )  padding-nav-ar @endif">{{(__('navbar.Brands'))}}</span> <i class="bi bi-chevron-down"></i></a>
@@ -164,7 +164,7 @@
 
            <ul>
                <li> <a href="{{ route('careers.create') }}" class="myfont-3">{{(__('Footer.Careers'))}}</a></li>
-               <li> <a href="#" class="myfont-3">{{(__('Footer.Franchise'))}}</a></li>
+               <li> <a href="{{route('Franchise')}}" class="myfont-3">{{(__('Footer.Franchise'))}}</a></li>
                <li> <a href="#" class="myfont-3">{{(__('Footer.Brands'))}}</a></li>
 
            </ul>
@@ -173,7 +173,7 @@
        <div class="col-lg-3 col-md-6 footer-links footer-padding">
 
            <ul>
-               <li> <a href="#" class="myfont-3">{{(__('Footer.FAQ'))}}</a></li>
+               <li> <a href="{{ route('FAQ') }}" class="myfont-3">{{(__('Footer.FAQ'))}}</a></li>
                <li> <a href="{{ route('contacts.create') }}" class="myfont-3">{{(__('Footer.Contact'))}}</a></li>
                <li> <a href="#" class="myfont-3">{{(__('Footer.Privacy'))}}</a></li>
 

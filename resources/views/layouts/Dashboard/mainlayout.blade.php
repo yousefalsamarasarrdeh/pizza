@@ -10,8 +10,8 @@
   <meta content="" name="keywords">
 
   <!-- Favicons -->
-  <link href="{{asset('Dashboard/assets/img/favicon.png')}}" rel="icon">
-  <link href="{{asset('Dashboard/assets/img/apple-touch-icon.png')}}" rel="apple-touch-icon">
+  <link href="{{asset('Dashboard/assets/img/logo.png')}}" rel="icon">
+  <link href="{{asset('Dashboard/assets/img/logo.png')}}" rel="apple-touch-icon">
 
   <!-- Google Fonts -->
   <link href="https://fonts.gstatic.com" rel="preconnect">
@@ -296,6 +296,14 @@
         </li>
      <!-- End Components Nav -->
 
+
+        <li class="nav-item">
+            <a class="nav-link " href="{{ route('admin.pages.index') }}">
+                <i class="bi bi-grid"></i>
+                <span>page</span>
+            </a>
+        </li>
+
       <li class="nav-item">
         <a class="nav-link collapsed" data-bs-target="#forms-nav" data-bs-toggle="collapse" href="#">
           <i class="bi bi-journal-text"></i><span>Forms</span><i class="bi bi-chevron-down ms-auto"></i>
@@ -334,15 +342,7 @@
 
   <main id="main" class="main">
 
-    <div class="pagetitle">
-      <h1>Dashboard</h1>
-      <nav>
-        <ol class="breadcrumb">
-          <li class="breadcrumb-item"><a href="mainlayout.blade.php">Home</a></li>
-          <li class="breadcrumb-item active">Dashboard</li>
-        </ol>
-      </nav>
-    </div><!-- End Page Title -->
+ 
 
       @yield('content')
 

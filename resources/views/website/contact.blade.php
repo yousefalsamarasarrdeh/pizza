@@ -31,7 +31,7 @@
         @endif
 
 
-      <div style="@if(  app()->getLocale()=="ar" ) direction: rtl" @endif ">
+      <div style="@if(  app()->getLocale()=="ar" ) direction: rtl" @endif" >
         <section id="contact" class="contact" style="background: #F9F9F9; ">
         <div class="container" data-aos="fade-up">
             <h1>{{(__('Contact.Contact'))}}</h1>
